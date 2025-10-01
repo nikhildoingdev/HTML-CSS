@@ -48,10 +48,6 @@ img{
   border: 1px solid transparent;
 }
 
-.main-product-image:hover{
-  border: 1px solid gray;
-}
-
 .product-details{
   width: 40%;
 }
