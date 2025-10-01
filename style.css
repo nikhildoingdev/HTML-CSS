@@ -20,7 +20,7 @@ table{
   border-collapse: collapse;
 }
 
-th,td{
+th,td, input,button{
   padding: 1rem;
   border: 1px solid #000;
 }
