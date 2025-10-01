@@ -124,3 +124,23 @@ li{
   gap: .5rem;
   align-items: center;
 }
+
+.faq{
+  margin-top: 2rem;
+}
+
+details{
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+
+summary{
+  list-style: none;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+details>p{
+  padding: .5rem 0;
+}
