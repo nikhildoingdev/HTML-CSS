@@ -28,6 +28,12 @@ section{
 .preview-image-container{
   max-width: 150px;
   max-height: 150px;
+  border: 1px solid transparent;
+}
+
+.preview-image-container:hover{
+  border: 1px solid gray;
+  cursor: pointer;
 }
 
 img{
@@ -38,6 +44,12 @@ img{
 
 .main-product-image{
   width: 50%;
+  height: fit-content;
+  border: 1px solid transparent;
+}
+
+.main-product-image:hover{
+  border: 1px solid gray;
 }
 
 .product-details{
