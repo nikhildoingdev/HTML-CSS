@@ -10,6 +10,8 @@ activePreview.classList.add('active');
 ['mouseover', 'mouseout', 'click'].forEach(eventType => {
   preview_images.forEach(image => {
     image.addEventListener(eventType, (e) => {
+      if (e.target.tagName !== 'IMG') return;
+
       const src = e.target.src;
 
       switch (e.type) {
