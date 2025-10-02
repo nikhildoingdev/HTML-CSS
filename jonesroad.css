@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   --decoration-font: "Petrona", sans-serif;
@@ -179,24 +179,24 @@ img {
   padding: 1rem;
 }
 
-.featured-section__product-price{
+.featured-section__product-price {
   width: 100%;
   display: flex;
   gap: 1px;
   display: none;
 }
 
-.featured-section__product-price>button{
+.featured-section__product-price > button {
   background: #000;
   color: #fff;
   border: 1px solid transparent;
   width: 100%;
-  padding: .25rem 0.25rem;
+  padding: 0.25rem 0.25rem;
   font-size: 0.75rem;
   text-wrap: nowrap;
 }
 
-.featured-section__product-price>button:nth-child(2){
+.featured-section__product-price > button:nth-child(2) {
   width: fit-content;
 }
 
@@ -283,11 +283,13 @@ img {
     margin: 1rem;
   }
 
-  .featured-section__title,.featured-section__seeall, .collection__title{
+  .featured-section__title,
+  .featured-section__seeall,
+  .collection__title {
     font-size: 0.85rem;
   }
 
-  .featured-section__product-title{
+  .featured-section__product-title {
     font-size: 0.75rem;
   }
 
@@ -295,12 +297,20 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .featured-section__product-status{
-    font-size: .6rem;
+  .featured-section__product-status {
+    font-size: 0.6rem;
   }
 
-  .featured-section__product-price{
+  .featured-section__product-price {
     display: flex;
+  }
+
+  .collection__title {
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .collection__grid{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -332,7 +342,12 @@ img {
     display: block;
   }
 
-  .featured-section__grid{
+  .featured-section__grid {
     gap: 0.5rem;
+  }
+
+  .collection__category-button{
+    font-size: 0.65rem;
+    padding: .5rem;
   }
 }
