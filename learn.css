@@ -36,6 +36,10 @@ section{
   cursor: pointer;
 }
 
+.preview-image-container.active{
+  border: 1px solid gray;
+}
+
 img{
   width: 100%;
   height: 100%;
