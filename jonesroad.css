@@ -61,7 +61,6 @@ img{
 
 .hero-section{
   max-width: 1920px;
-  height: 820px;
   margin: auto;
   border: 1px solid #000;
 }
@@ -109,9 +108,15 @@ img{
   text-decoration: none;
   color: #fff;
   padding: 1rem 2rem;
+  transition: all .3s ease-in-out;
 }
 
-.featured-section{
+.hero-section__cta:hover{
+  background:#fff;
+  color: #000;
+}
+
+.featured-section, .collection{
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -123,7 +128,7 @@ img{
   justify-content: space-between;
 }
 
-.featured-section__title{
+.featured-section__title, .collection__title{
   font-size: 1rem;
 }
 
@@ -166,4 +171,41 @@ img{
 
 .brand-carousel__logo-container{
   width: fit-content;
+}
+
+.collection{
+  margin: 0;
+}
+
+.collection__title{
+  margin: 3rem 3rem 0 3rem;
+}
+
+.collection__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.collection__category{
+  position: relative;
+}
+
+.collection__category-button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.collection__category-button:hover{
+  background: transparent;
+  border: 1px solid#fff;
+  color: #fff;
 }
