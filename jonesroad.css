@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --decoration-font: "Petrona", sans-serif;
+  --decoration-font: "Libre Bodoni", sans-serif;
   --body-font: "Zalando Sans Expanded", sans-serif;
 }
 
