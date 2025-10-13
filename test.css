@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Zen+Dots&display=swap');
+
+*{
+  font-family: 'Alan Sans', sans-serif;
+}
+
+h1{
+  font-family: 'Zen Dots', sans-serif;
+}
