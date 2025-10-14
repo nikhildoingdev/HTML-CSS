@@ -35,21 +35,40 @@
       ></product-card>
     </div>
 
-    <h1 class="text-2xl font-medium mt-10 mb-5">Cart</h1>
-    <cart-items class="product__cart"> </cart-items>
+    <div>
+      <h1 class="text-2xl font-medium mt-5 mb-5">Cart</h1>
+      <cart-items class="product__cart"> </cart-items>
+    </div>
 
     <template id="product__cart-item">
-      <div class="flex gap-2 justify-between py-2">
+      <div class="flex gap-2 justify-between py-2 border-b-1 border-gray-200">
         <div class="flex gap-5 items-center">
           <div class="w-20">
             <img class="product__image" />
           </div>
-          <p class="product__title text-lg"></p>
+          <div>
+            <p class="product__title text-lg"></p>
+            <qunatity-change></qunatity-change>
+          </div>
         </div>
         <div class="flex gap-5 items-center">
-          <div class="border border-emerald-500 flex [&_span]:w-10 [&_span]:h-10 [&_span]:flex [&_span]:justify-center [&_span]:items-center"><span class="bg-emerald-300 hover:bg-emerald-400 cursor-pointer">-</span><span class="product__quantity"></span><span class="bg-emerald-300 hover:bg-emerald-400 cursor-pointer">+</span></div>
           <p class="product__price text-xl mb-2"></p>
         </div>
+      </div>
+    </template>
+
+    <template id="product__quantity-change">
+      <div
+        class="mt-2 border border-emerald-500 w-fit flex [&_span]:w-10 [&_span]:h-10 [&_span]:flex [&_span]:justify-center [&_span]:items-center"
+      >
+        <span
+          class="bg-emerald-300 hover:bg-emerald-400 cursor-pointer select-none"
+          >-</span
+        ><span class="product__quantity"></span
+        ><span
+          class="bg-emerald-300 hover:bg-emerald-400 cursor-pointer select-none"
+          >+</span
+        >
       </div>
     </template>
 
