@@ -1,3 +1,4 @@
+import CartItems from "./CartItems.js";
 import ProductCard from "./ProductCard.js"
 
 window.cart = {
@@ -5,4 +6,5 @@ window.cart = {
 }
 
 customElements.define('product-card', ProductCard);
+customElements.define('cart-items', CartItems);
 
