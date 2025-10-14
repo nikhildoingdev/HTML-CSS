@@ -1,3 +1,5 @@
+import formatMoney from "./utils.js";
+
 class ProductCard extends HTMLElement {
   constructor() {
     super();
@@ -11,12 +13,15 @@ class ProductCard extends HTMLElement {
 
     const imageEl = template.querySelector(".product__image");
     const titleEl = template.querySelector(".product__title");
+    const priceEl = template.querySelector(".product__price");
     const buttonEl = template.querySelector(".product__add-to-cart");
 
     if (imageEl) 
       imageEl.src = this.image;
     if (titleEl) 
       titleEl.textContent = this.title;
+    if (priceEl) 
+      priceEl.textContent = formatMoney(this.price);
     
     buttonEl.addEventListener("click", this.addToCart.bind(this));
     this.appendChild(template);

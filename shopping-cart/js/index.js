@@ -5,3 +5,4 @@ window.cart = {
 }
 
 customElements.define('product-card', ProductCard);
+
