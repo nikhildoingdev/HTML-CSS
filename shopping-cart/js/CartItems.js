@@ -6,6 +6,17 @@ class CartItems extends HTMLElement {
   }
 
   render() {
+    if (window.cart.items.length < 1) {
+      console.log("first");
+
+      this.innerHTML = `
+      <div class="flex justify-center items-center p-8 text-xl bg-emerald-100">
+      <h2>No products in the cart</h2>
+      </div>
+    `;
+      return
+    }
+
     const template = document.getElementById("product__cart-item");
     this.innerHTML = `
       <div class="flex justify-between my-2 text-xl bg-emerald-100">
@@ -26,6 +37,7 @@ class CartItems extends HTMLElement {
       titleEl.textContent = item.title;
       qunatityEl.setAttribute('id', item.id);
       qunatityEl.setAttribute('quantity', item.quantity);
+      qunatityEl.setAttribute('price', item.unitPrice);
       priceEl.textContent = formatMoney(item.price);
 
       this.appendChild(cartItem);

@@ -5,8 +5,8 @@ class ProductCard extends HTMLElement {
     super();
     const template = document.getElementById("product__template").content.cloneNode(true);
 
-    this.cartItems = document.querySelector('cart-items');
-    
+    this.cartItems = document.querySelector("cart-items");
+
     this.id = this.getAttribute("id");
     this.image = this.getAttribute("image");
     this.title = this.getAttribute("title");
@@ -17,7 +17,7 @@ class ProductCard extends HTMLElement {
     const priceEl = template.querySelector(".product__price");
     const buttonEl = template.querySelector(".product__add-to-cart");
 
-    if (imageEl)
+    if (imageEl) 
       imageEl.src = this.image;
     if (titleEl) 
       titleEl.textContent = this.title;
@@ -33,6 +33,7 @@ class ProductCard extends HTMLElement {
       id: this.id,
       title: this.title,
       quantity: 1,
+      unitPrice: this.price,
       price: this.price,
       image: this.image
     };
@@ -44,8 +45,6 @@ class ProductCard extends HTMLElement {
     } else {
       window.cart.items.push(item);
     }
-
-    console.log(window.cart.items)
 
     this.cartItems.render();
   }
