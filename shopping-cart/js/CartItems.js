@@ -7,7 +7,6 @@ class CartItems extends HTMLElement {
 
   render() {
     if (window.cart.items.length < 1) {
-      console.log("first");
 
       this.innerHTML = `
       <div class="flex justify-center items-center p-8 text-xl bg-emerald-100">
